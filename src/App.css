@@ -1,0 +1,150 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.hover-shadow {
+  transition: box-shadow 0.3s ease;
+}
+.hover-shadow:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Add smooth hover effect on cards */
+.hover-shadow {
+  transition: all 0.3s ease;
+}
+.hover-shadow:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive section spacing */
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media (max-width: 768px) {
+  h1.display-4 {
+    font-size: 2rem;
+  }
+  .btn {
+    font-size: 0.9rem;
+  }
+}
+
+
+/* Typewriter Animation */
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #fff;
+  animation: typing 3s steps(25) 1 forwards, blink 0.7s infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 320px; } /* adjust width according to text */
+  
+}
+
+@keyframes blink {
+  0%, 50%, 100% { border-color: transparent; }
+  25%, 75% { border-color: rgb(40, 194, 23); }
+}
+
+/* Optional: Smooth fade-in */
+#welcome-text {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+/* Hover scale for hero button */
+.btn-primary:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+
+.bg-color {
+  
+  color: white;
+  background: linear-gradient(135deg, #E90B5C, #E25A31, #E09100);
+}
+.color {
+  background: linear-gradient(135deg, #E90B5C, #E25A31, #E09100);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold; /* optional */
+}
+
+
+.text-color{
+ color: #fcab15
+}
+
+.background-color {
+    background: linear-gradient(
+357deg, #0ec093, #cb9b8e, #ffb329);
+}
+
+
+/* Modal content ko fixed width & height dena */
+#logoGalleryModal .modal-content {
+  width: 90%; /* ya max-width: 600px; */
+  max-height: 80vh; /* height screen ke 80% tak */
+  background-color: #1a1a1a; /* dark background */
+  color: #fff; /* text white */
+  overflow-y: auto; /* scroll agar content zyada ho */
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.custom-offcanvas-width {
+  width: 230px !important; 
+   background-color: #1a1a1a;
+  
+}
+.offcanvas-header{
+ background: linear-gradient(294deg, #1f1c2c, #124d25ff);
+}
+
