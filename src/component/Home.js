@@ -135,7 +135,7 @@ const Home = () => {
     <ul className="navbar-nav flex-column gap-2">
       <li className="nav-item">
         <a className="nav-link text-white d-flex align-items-center" href="#home">
-          <i className="fas fa-home me-2"></i> Home
+          <i className="fas fa-home me-2"></i> Home1
         </a>
       </li>
       <li className="nav-item">
